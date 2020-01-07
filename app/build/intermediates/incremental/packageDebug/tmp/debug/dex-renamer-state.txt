@@ -1,0 +1,10 @@
+#Tue Jan 07 15:03:55 IST 2020
+path.2=classes2.dex
+path.1=classes.dex
+path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.2=/Users/AmitZnaft/Desktop/HoMedical-c2ad037b685c78eaf49c88481935099b7db2649f/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes2.dex
+base.1=/Users/AmitZnaft/Desktop/HoMedical-c2ad037b685c78eaf49c88481935099b7db2649f/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.0=/Users/AmitZnaft/Desktop/HoMedical-c2ad037b685c78eaf49c88481935099b7db2649f/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
