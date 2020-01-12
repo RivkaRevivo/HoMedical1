@@ -16,6 +16,7 @@ public class FirebaseDatabasehelper {
     private FirebaseDatabase mdatabase;
     private DatabaseReference mReferenceMedicals;
     private List<Medical> medicals = new ArrayList<>();
+   
 
     public interface DataStatus {
         void DataisLoaded (List<Medical> medicals , List <String> keys);
@@ -27,6 +28,7 @@ public class FirebaseDatabasehelper {
     public FirebaseDatabasehelper() {
         mdatabase = FirebaseDatabase.getInstance();
         mReferenceMedicals = mdatabase.getReference("Medicals");
+
     }
     public void getMedical (final DataStatus dataStatus){
         mReferenceMedicals.addValueEventListener(new ValueEventListener() {
@@ -38,6 +40,7 @@ public class FirebaseDatabasehelper {
                     keys.add(keysmedic.getKey());
                     Medical medical = keysmedic.getValue(Medical.class);
                     medicals.add(medical);
+
                 }
                 dataStatus.DataisLoaded(medicals,keys);
 

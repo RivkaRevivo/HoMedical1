@@ -6,14 +6,18 @@ public class Medical {
     private String desc;
     private String problem;
     private int category;
-
-    public Medical(String name, String desc, String problem, int category) {
+    private String key;
+    public Medical(String name, String desc, String problem, int category , String key) {
         this.name = name;
         this.desc = desc;
         this.problem = problem;
+        this.key = key;
         this.category = category;
     }
 
+    public String getKey() {
+        return key;
+    }
     public String getProblem() {
         return problem;
     }

@@ -11,7 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Belly"></activity>
+        <activity android:name=".nottry"></activity>
+        <activity android:name=".TipOfDay" />
+        <activity android:name=".MangerActivity" />
+        <activity android:name=".mmmm" />
+        <activity android:name=".favorites" />
+        <activity android:name=".Belly" />
         <activity android:name=".Throat" />
         <activity android:name=".Back" />
         <activity android:name=".eyes" />

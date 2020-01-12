@@ -19,7 +19,7 @@ public class Throat extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_throat);
         mRecyclerView = (RecyclerView) findViewById(R.id.RecyclerView_Throat);
-        get = findViewById(R.id.buttonget);
+        get = findViewById(R.id.Button);
         new FirebaseDatabasehelper().getMedical(new FirebaseDatabasehelper.DataStatus() {
             @Override
             public void DataisLoaded(List<Medical> medicals, List<String> keys) {
@@ -29,7 +29,7 @@ public class Throat extends AppCompatActivity {
                         med.add(m);
                     }
                 }
-                new RecyclerView_Config().setConfig(mRecyclerView, Throat.this, med,keys);
+                new RecyclerView_Config().setConfig(mRecyclerView, Throat.this, med,keys );
             }
 
             @Override

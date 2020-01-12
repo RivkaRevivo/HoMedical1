@@ -18,7 +18,7 @@ public class Back extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_back);
         mRecyclerView = (RecyclerView) findViewById(R.id.RecyclerView_back);
-        get = findViewById(R.id.buttonget);
+        get = findViewById(R.id.Button);
         new FirebaseDatabasehelper().getMedical(new FirebaseDatabasehelper.DataStatus() {
             @Override
             public void DataisLoaded(List<Medical> medicals, List<String> keys) {

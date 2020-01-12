@@ -1,5 +1,6 @@
 package com.example.homedical;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -19,9 +20,13 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.auth.User;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -33,6 +38,8 @@ public class Register extends AppCompatActivity {
     FirebaseAuth fAuth;
    FirebaseFirestore fStore;
     String userID;
+    DatabaseReference mDatabase;
+    User1 usernew;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +55,7 @@ public class Register extends AppCompatActivity {
 
         fAuth = FirebaseAuth.getInstance();
        fStore = FirebaseFirestore.getInstance();
-
+       mDatabase = FirebaseDatabase.getInstance().getReference();
 
         if(fAuth.getCurrentUser() != null){
             startActivity(new Intent(getApplicationContext(),MainActivity.class));
@@ -103,7 +110,16 @@ public class Register extends AppCompatActivity {
                                     Log.d(TAG, "onFailure: " + e.toString());
                                 }
                             });
-                            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+
+                            if(fullName.equals("yuval")){  usernew = new User1(fullName,1);}
+                            else{
+                           usernew = new User1(fullName,0);}
+                            mDatabase.child("users").child(userID).child("name").setValue(usernew.getName());
+                            if(usernew.stutos == 0){
+                            startActivity(new Intent(getApplicationContext(),MainActivity.class));}
+                            else{
+                                startActivity(new Intent(getApplicationContext(),MangerActivity.class));
+                            }
 
                         }else {
                             Toast.makeText(Register.this, "Error ! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();

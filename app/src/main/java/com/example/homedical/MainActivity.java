@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     Button throat;
     Button eyes;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,7 +100,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void updateUI(FirebaseUser user) {
         if (user != null) {
-
+          //  if(user.getEmail().equals("")) {
+            //    startActivity(new Intent(MainActivity.this, MangerActivity.class));
+           // }
         } else {
            startActivity(new Intent(MainActivity.this , Login.class));
         }

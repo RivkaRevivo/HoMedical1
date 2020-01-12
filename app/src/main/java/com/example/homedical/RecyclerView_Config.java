@@ -13,7 +13,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import org.w3c.dom.Text;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.List;
 
@@ -21,7 +23,7 @@ public class RecyclerView_Config {
 
     private Context mContext;
     private MedicalAdapter mMedicalAdapter;
-    public void setConfig (RecyclerView recyclerView, Context context, List<Medical> medicals, List<String> keys){
+    public void setConfig (RecyclerView recyclerView, Context context, List<Medical> medicals, List<String> keys ){
         mContext = context;
         mMedicalAdapter = new MedicalAdapter(medicals,keys);
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
@@ -32,14 +34,17 @@ public class RecyclerView_Config {
         private TextView mProblem;
         private TextView mName;
         private Button get;
+        private Button add;
         private String key;
+        private DatabaseReference mDatabase;
 
         public MedicalitemView(ViewGroup parent){
             super(LayoutInflater.from(mContext).inflate(R.layout.medical_list_item,parent ,false));
             mProblem = (TextView) itemView.findViewById(R.id.problem_textview);
             mName = (TextView) itemView.findViewById(R.id.name_textview);
-            get = (Button)itemView.findViewById(R.id.buttonget);
-
+            get = (Button)itemView.findViewById(R.id.Button);
+            add = (Button)itemView.findViewById(R.id.button_add);
+            mDatabase = FirebaseDatabase.getInstance().getReference();
         }
 
         public void bind(final Medical medical, String key) {
@@ -52,9 +57,20 @@ public class RecyclerView_Config {
                 public void onClick(View v) {
                     Intent intent = new Intent(mContext, GetDesc.class);
                     intent.putExtra("desc", medical.getDesc());
+                    //  intent.putExtra("key", key);
                     mContext.startActivity(intent);
                 }
             });
+            {
+                add.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        String u = FirebaseAuth.getInstance().getCurrentUser().getUid();
+                        mDatabase.child("users").child(u).child("favorites").push().setValue(medical.getKey());
+
+                    }
+                });
+        }
         }
     }
 
