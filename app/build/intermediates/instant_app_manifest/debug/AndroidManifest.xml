@@ -28,6 +28,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.homedical.MangerActivity" />
+        <activity android:name="com.example.homedical.TipOfDay" />
         <activity android:name="com.example.homedical.Belly" />
         <activity android:name="com.example.homedical.Throat" />
         <activity android:name="com.example.homedical.Back" />

@@ -728,6 +728,7 @@ drawable googleg_standard_color_18
 drawable ic_icon
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_star_notific
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -741,6 +742,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable p1
+drawable p2
 drawable pone
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -822,6 +824,7 @@ id belly
 id blocking
 id bottom
 id buttonPanel
+id buttonaddnot
 id buttonget
 id center
 id center_horizontal
@@ -951,6 +954,7 @@ id textSpacerNoTitle
 id textView
 id textView10
 id textView11
+id textView13
 id textView2
 id textView3
 id textView4
@@ -1021,8 +1025,10 @@ layout activity_get_desc
 layout activity_head
 layout activity_login
 layout activity_main
+layout activity_manger
 layout activity_register
 layout activity_throat
+layout activity_tip_of_day
 layout custom_dialog
 layout medical_list_item
 layout notification_action
@@ -1035,6 +1041,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu manu_maneger
 menu menu
 mipmap ic_launcher
 mipmap ic_launcher_round

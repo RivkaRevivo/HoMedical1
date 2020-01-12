@@ -170,7 +170,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         builder.show();
 
     }
@@ -184,14 +183,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateUI(FirebaseUser user) {
+        String userID = fAuth.getCurrentUser().getUid();
         if (user != null) {
-
+            if (userID.equals("QbTt0dIE0tN2myTl9A5GhLomd6f2") ||userID.equals("LLNOpi2gQgXSIiT2yfAVdTY9BIH2") ){
+                startActivity(new Intent(MainActivity.this, MangerActivity.class));
+            }
         } else {
-           startActivity(new Intent(MainActivity.this , Login.class));
+            startActivity(new Intent(MainActivity.this, Login.class));
         }
     }
-
-
-
 
 }
