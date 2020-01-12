@@ -33,13 +33,12 @@ public class Head extends AppCompatActivity {
             public void DataisLoaded(List<Medical> medicals, List<String> keys) {
                 List<Medical>med = new ArrayList<>();
                 for (Medical m : medicals){
-                    if (m.getCategory() == 1 ){
+                    if (m.getCategory().equals("1")){
                         med.add(m);
                     }
                 }
                 new RecyclerView_Config().setConfig(mRecyclerView, Head.this, med,keys);
             }
-
             @Override
             public void DataIsInserted() {
 

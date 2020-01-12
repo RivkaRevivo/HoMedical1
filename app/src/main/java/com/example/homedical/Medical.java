@@ -5,9 +5,9 @@ public class Medical {
     private String name;
     private String desc;
     private String problem;
-    private int category;
+    private String category;
 
-    public Medical(String name, String desc, String problem, int category) {
+    public Medical(String name, String desc, String problem, String category) {
         this.name = name;
         this.desc = desc;
         this.problem = problem;
@@ -22,11 +22,11 @@ public class Medical {
         this.problem = problem;
     }
 
-    public int getCategory() {
+    public String getCategory() {
         return category;
     }
 
-    public void setCategory(int category) {
+    public void setCategory(String category) {
         this.category = category;
     }
 

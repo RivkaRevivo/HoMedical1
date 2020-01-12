@@ -11,9 +11,10 @@ public class TipOfDay extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tip_of_day);
-        textView = findViewById(R.id.textView13);
-        String massage = getIntent().getStringExtra("massage");
-        textView.setText(massage);
-
+        textView = (TextView) findViewById(R.id.textView13);
+//        Bundle b = new Bundle();
+//        b = getIntent().getExtras();
+//        String name = b.getString("tip");
+        //textView.setText(MangerActivity.mes);
     }
 }

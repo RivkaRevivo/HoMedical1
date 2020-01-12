@@ -25,7 +25,7 @@ public class Throat extends AppCompatActivity {
             public void DataisLoaded(List<Medical> medicals, List<String> keys) {
                 List<Medical>med = new ArrayList<>();
                 for (Medical m : medicals){
-                    if (m.getCategory() == 4){
+                    if (m.getCategory().equals("4")){
                         med.add(m);
                     }
                 }

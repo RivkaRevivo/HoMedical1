@@ -25,7 +25,7 @@ public class Belly extends AppCompatActivity {
             public void DataisLoaded(List<Medical> medicals, List<String> keys) {
                 List<Medical>med = new ArrayList<>();
                 for (Medical m : medicals){
-                    if (m.getCategory() == 5){
+                    if (m.getCategory().equals("5")){
                         med.add(m);
                     }
                 }

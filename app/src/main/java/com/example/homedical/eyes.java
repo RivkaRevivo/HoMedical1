@@ -23,7 +23,7 @@ public class eyes extends AppCompatActivity {
             public void DataisLoaded(List<Medical> medicals, List<String> keys) {
                 List<Medical>med = new ArrayList<>();
                 for (Medical m : medicals){
-                    if (m.getCategory() == 2){
+                    if (m.getCategory().equals("2")){
                         med.add(m);
                     }
                 }

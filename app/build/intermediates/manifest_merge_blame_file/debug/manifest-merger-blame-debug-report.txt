@@ -23,14 +23,14 @@
 16-->[com.google.android.gms:play-services-measurement-api:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/e7a47fe6ab9e3dfc00bca59c6b021202/play-services-measurement-api-17.2.0/AndroidManifest.xml:24:5-68
 16-->[com.google.android.gms:play-services-measurement-api:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/e7a47fe6ab9e3dfc00bca59c6b021202/play-services-measurement-api-17.2.0/AndroidManifest.xml:24:22-65
 17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-17-->[com.google.firebase:firebase-iid:19.0.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/333a4b14f4a36b22a5b8879ae448e614/firebase-iid-19.0.0/AndroidManifest.xml:26:5-82
-17-->[com.google.firebase:firebase-iid:19.0.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/333a4b14f4a36b22a5b8879ae448e614/firebase-iid-19.0.0/AndroidManifest.xml:26:22-79
+17-->[com.google.firebase:firebase-iid:20.0.2] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/1db8866275c41b3d104d8751b35f062b/firebase-iid-20.0.2/AndroidManifest.xml:26:5-82
+17-->[com.google.firebase:firebase-iid:20.0.2] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/1db8866275c41b3d104d8751b35f062b/firebase-iid-20.0.2/AndroidManifest.xml:26:22-79
 18    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 18-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:26:5-110
 18-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:26:22-107
 19
 20    <application
-20-->/Users/AmitZnaft/Desktop/HoMedical1/app/src/main/AndroidManifest.xml:7:5-43:19
+20-->/Users/AmitZnaft/Desktop/HoMedical1/app/src/main/AndroidManifest.xml:7:5-50:19
 21        android:allowBackup="true"
 21-->/Users/AmitZnaft/Desktop/HoMedical1/app/src/main/AndroidManifest.xml:8:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -113,149 +113,222 @@
 58            android:resource="@array/preloaded_fonts" />
 58-->/Users/AmitZnaft/Desktop/HoMedical1/app/src/main/AndroidManifest.xml:42:13-54
 59
-60        <activity
-60-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:24:9-31:50
-61            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-61-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:25:13-85
-62            android:excludeFromRecents="true"
-62-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:26:13-46
-63            android:exported="true"
-63-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:27:13-36
-64            android:launchMode="singleTask"
-64-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:28:13-44
-65            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-65-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:29:13-102
-66            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-66-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:30:13-72
+60        <service
+60-->/Users/AmitZnaft/Desktop/HoMedical1/app/src/main/AndroidManifest.xml:43:9-49:19
+61            android:name="com.example.homedical.MyMessagingService"
+61-->/Users/AmitZnaft/Desktop/HoMedical1/app/src/main/AndroidManifest.xml:44:13-47
+62            android:exported="false" >
+62-->/Users/AmitZnaft/Desktop/HoMedical1/app/src/main/AndroidManifest.xml:45:13-37
+63            <intent-filter>
+63-->/Users/AmitZnaft/Desktop/HoMedical1/app/src/main/AndroidManifest.xml:46:13-48:29
+64                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+64-->/Users/AmitZnaft/Desktop/HoMedical1/app/src/main/AndroidManifest.xml:47:17-78
+64-->/Users/AmitZnaft/Desktop/HoMedical1/app/src/main/AndroidManifest.xml:47:25-75
+65            </intent-filter>
+66        </service>
 67
-68        <service
-68-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:33:9-39:19
-69            android:name="com.google.firebase.components.ComponentDiscoveryService"
-69-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:34:13-84
-70            android:directBootAware="true"
-70-->[com.google.firebase:firebase-common:19.3.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/af9db124845b5eb68217777f928e3593/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
-71            android:exported="false" >
-71-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:35:13-37
-72            <meta-data
-72-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:36:13-38:85
-73                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-73-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:37:17-109
-74                android:value="com.google.firebase.components.ComponentRegistrar" />
-74-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:38:17-82
-75            <meta-data
-75-->[com.google.firebase:firebase-database:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/829c2c9fef73b753e2e0084cf78085fb/firebase-database-19.2.0/AndroidManifest.xml:32:13-34:85
-76                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-76-->[com.google.firebase:firebase-database:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/829c2c9fef73b753e2e0084cf78085fb/firebase-database-19.2.0/AndroidManifest.xml:33:17-109
-77                android:value="com.google.firebase.components.ComponentRegistrar" />
-77-->[com.google.firebase:firebase-database:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/829c2c9fef73b753e2e0084cf78085fb/firebase-database-19.2.0/AndroidManifest.xml:34:17-82
-78            <meta-data
-78-->[com.google.firebase:firebase-firestore:21.3.1] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/2b4a295eb66a4f051a28e1393dcc73ac/jetified-firebase-firestore-21.3.1/AndroidManifest.xml:20:13-22:85
-79                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-79-->[com.google.firebase:firebase-firestore:21.3.1] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/2b4a295eb66a4f051a28e1393dcc73ac/jetified-firebase-firestore-21.3.1/AndroidManifest.xml:21:17-111
-80                android:value="com.google.firebase.components.ComponentRegistrar" />
-80-->[com.google.firebase:firebase-firestore:21.3.1] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/2b4a295eb66a4f051a28e1393dcc73ac/jetified-firebase-firestore-21.3.1/AndroidManifest.xml:22:17-82
-81            <meta-data
-81-->[com.google.android.gms:play-services-measurement-api:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/e7a47fe6ab9e3dfc00bca59c6b021202/play-services-measurement-api-17.2.0/AndroidManifest.xml:30:13-32:85
-82                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-82-->[com.google.android.gms:play-services-measurement-api:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/e7a47fe6ab9e3dfc00bca59c6b021202/play-services-measurement-api-17.2.0/AndroidManifest.xml:31:17-139
-83                android:value="com.google.firebase.components.ComponentRegistrar" />
-83-->[com.google.android.gms:play-services-measurement-api:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/e7a47fe6ab9e3dfc00bca59c6b021202/play-services-measurement-api-17.2.0/AndroidManifest.xml:32:17-82
-84            <meta-data
-84-->[com.google.firebase:firebase-iid:19.0.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/333a4b14f4a36b22a5b8879ae448e614/firebase-iid-19.0.0/AndroidManifest.xml:32:13-34:85
-85                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-85-->[com.google.firebase:firebase-iid:19.0.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/333a4b14f4a36b22a5b8879ae448e614/firebase-iid-19.0.0/AndroidManifest.xml:33:17-96
-86                android:value="com.google.firebase.components.ComponentRegistrar" />
-86-->[com.google.firebase:firebase-iid:19.0.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/333a4b14f4a36b22a5b8879ae448e614/firebase-iid-19.0.0/AndroidManifest.xml:34:17-82
-87        </service>
-88
-89        <receiver
-89-->[com.google.firebase:firebase-iid:19.0.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/333a4b14f4a36b22a5b8879ae448e614/firebase-iid-19.0.0/AndroidManifest.xml:37:9-44:20
-90            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-90-->[com.google.firebase:firebase-iid:19.0.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/333a4b14f4a36b22a5b8879ae448e614/firebase-iid-19.0.0/AndroidManifest.xml:38:13-78
-91            android:exported="true"
-91-->[com.google.firebase:firebase-iid:19.0.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/333a4b14f4a36b22a5b8879ae448e614/firebase-iid-19.0.0/AndroidManifest.xml:39:13-36
-92            android:permission="com.google.android.c2dm.permission.SEND" >
-92-->[com.google.firebase:firebase-iid:19.0.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/333a4b14f4a36b22a5b8879ae448e614/firebase-iid-19.0.0/AndroidManifest.xml:40:13-73
-93            <intent-filter>
-93-->[com.google.firebase:firebase-iid:19.0.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/333a4b14f4a36b22a5b8879ae448e614/firebase-iid-19.0.0/AndroidManifest.xml:41:13-43:29
-94                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-94-->[com.google.firebase:firebase-iid:19.0.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/333a4b14f4a36b22a5b8879ae448e614/firebase-iid-19.0.0/AndroidManifest.xml:42:17-81
-94-->[com.google.firebase:firebase-iid:19.0.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/333a4b14f4a36b22a5b8879ae448e614/firebase-iid-19.0.0/AndroidManifest.xml:42:25-78
-95            </intent-filter>
-96        </receiver>
-97
-98        <activity
-98-->[com.google.android.gms:play-services-base:17.1.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/cfafb781a345d3f54848aefef9b2f0c0/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
-99            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-99-->[com.google.android.gms:play-services-base:17.1.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/cfafb781a345d3f54848aefef9b2f0c0/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
-100            android:exported="false"
-100-->[com.google.android.gms:play-services-base:17.1.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/cfafb781a345d3f54848aefef9b2f0c0/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
-101            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-101-->[com.google.android.gms:play-services-base:17.1.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/cfafb781a345d3f54848aefef9b2f0c0/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
-102
-103        <receiver
-103-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:29:9-33:20
-104            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-104-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:30:13-85
-105            android:enabled="true"
-105-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:31:13-35
-106            android:exported="false" >
-106-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:32:13-37
-107        </receiver>
-108        <receiver
-108-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:34:9-42:20
-109            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-109-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:35:13-100
-110            android:enabled="true"
-110-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:36:13-35
-111            android:exported="true"
-111-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:37:13-36
-112            android:permission="android.permission.INSTALL_PACKAGES" >
-112-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:38:13-69
-113            <intent-filter>
-113-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:39:13-41:29
-114                <action android:name="com.android.vending.INSTALL_REFERRER" />
-114-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:40:17-79
-114-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:40:25-76
-115            </intent-filter>
-116        </receiver>
-117
-118        <service
-118-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:44:9-47:40
-119            android:name="com.google.android.gms.measurement.AppMeasurementService"
-119-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:45:13-84
-120            android:enabled="true"
-120-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:46:13-35
-121            android:exported="false" />
-121-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:47:13-37
-122        <service
-122-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:48:9-52:72
-123            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-123-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:49:13-87
-124            android:enabled="true"
-124-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:50:13-35
+68        <activity
+68-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:24:9-31:50
+69            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+69-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:25:13-85
+70            android:excludeFromRecents="true"
+70-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:26:13-46
+71            android:exported="true"
+71-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:27:13-36
+72            android:launchMode="singleTask"
+72-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:28:13-44
+73            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+73-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:29:13-102
+74            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+74-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:30:13-72
+75
+76        <service
+76-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:33:9-39:19
+77            android:name="com.google.firebase.components.ComponentDiscoveryService"
+77-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:34:13-84
+78            android:directBootAware="true"
+78-->[com.google.firebase:firebase-common:19.3.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/af9db124845b5eb68217777f928e3593/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+79            android:exported="false" >
+79-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:35:13-37
+80            <meta-data
+80-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:36:13-38:85
+81                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+81-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:37:17-109
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-auth:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b5644461ae56d3bcb008bd7a18c828b2/firebase-auth-19.2.0/AndroidManifest.xml:38:17-82
+83            <meta-data
+83-->[com.google.firebase:firebase-database:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/829c2c9fef73b753e2e0084cf78085fb/firebase-database-19.2.0/AndroidManifest.xml:32:13-34:85
+84                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+84-->[com.google.firebase:firebase-database:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/829c2c9fef73b753e2e0084cf78085fb/firebase-database-19.2.0/AndroidManifest.xml:33:17-109
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.firebase:firebase-database:19.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/829c2c9fef73b753e2e0084cf78085fb/firebase-database-19.2.0/AndroidManifest.xml:34:17-82
+86            <meta-data
+86-->[com.google.firebase:firebase-firestore:21.3.1] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/2b4a295eb66a4f051a28e1393dcc73ac/jetified-firebase-firestore-21.3.1/AndroidManifest.xml:20:13-22:85
+87                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+87-->[com.google.firebase:firebase-firestore:21.3.1] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/2b4a295eb66a4f051a28e1393dcc73ac/jetified-firebase-firestore-21.3.1/AndroidManifest.xml:21:17-111
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-firestore:21.3.1] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/2b4a295eb66a4f051a28e1393dcc73ac/jetified-firebase-firestore-21.3.1/AndroidManifest.xml:22:17-82
+89            <meta-data
+89-->[com.google.firebase:firebase-messaging:20.1.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/356ea4ece8622f8de74f806f642007f1/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:38:13-40:85
+90                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+90-->[com.google.firebase:firebase-messaging:20.1.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/356ea4ece8622f8de74f806f642007f1/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:39:17-119
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.firebase:firebase-messaging:20.1.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/356ea4ece8622f8de74f806f642007f1/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:40:17-82
+92            <meta-data
+92-->[com.google.android.gms:play-services-measurement-api:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/e7a47fe6ab9e3dfc00bca59c6b021202/play-services-measurement-api-17.2.0/AndroidManifest.xml:30:13-32:85
+93                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+93-->[com.google.android.gms:play-services-measurement-api:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/e7a47fe6ab9e3dfc00bca59c6b021202/play-services-measurement-api-17.2.0/AndroidManifest.xml:31:17-139
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.android.gms:play-services-measurement-api:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/e7a47fe6ab9e3dfc00bca59c6b021202/play-services-measurement-api-17.2.0/AndroidManifest.xml:32:17-82
+95            <meta-data
+95-->[com.google.firebase:firebase-iid:20.0.2] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/1db8866275c41b3d104d8751b35f062b/firebase-iid-20.0.2/AndroidManifest.xml:32:13-34:85
+96                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+96-->[com.google.firebase:firebase-iid:20.0.2] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/1db8866275c41b3d104d8751b35f062b/firebase-iid-20.0.2/AndroidManifest.xml:33:17-96
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-iid:20.0.2] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/1db8866275c41b3d104d8751b35f062b/firebase-iid-20.0.2/AndroidManifest.xml:34:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/416938ba904065bf60cf709b2ba1d356/firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+99                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+99-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/416938ba904065bf60cf709b2ba1d356/firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/416938ba904065bf60cf709b2ba1d356/firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+101        </service>
+102        <!--
+103             FirebaseMessagingService performs security checks at runtime,
+104             but set to not exported to explicitly avoid allowing another app to call it.
+105        -->
+106        <service
+106-->[com.google.firebase:firebase-messaging:20.1.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/356ea4ece8622f8de74f806f642007f1/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:28:9-34:19
+107            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+107-->[com.google.firebase:firebase-messaging:20.1.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/356ea4ece8622f8de74f806f642007f1/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:29:13-82
+108            android:exported="false" >
+108-->[com.google.firebase:firebase-messaging:20.1.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/356ea4ece8622f8de74f806f642007f1/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:30:13-37
+109            <intent-filter android:priority="-500" >
+109-->/Users/AmitZnaft/Desktop/HoMedical1/app/src/main/AndroidManifest.xml:46:13-48:29
+110                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+110-->/Users/AmitZnaft/Desktop/HoMedical1/app/src/main/AndroidManifest.xml:47:17-78
+110-->/Users/AmitZnaft/Desktop/HoMedical1/app/src/main/AndroidManifest.xml:47:25-75
+111            </intent-filter>
+112        </service>
+113
+114        <receiver
+114-->[com.google.firebase:firebase-iid:20.0.2] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/1db8866275c41b3d104d8751b35f062b/firebase-iid-20.0.2/AndroidManifest.xml:37:9-44:20
+115            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+115-->[com.google.firebase:firebase-iid:20.0.2] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/1db8866275c41b3d104d8751b35f062b/firebase-iid-20.0.2/AndroidManifest.xml:38:13-78
+116            android:exported="true"
+116-->[com.google.firebase:firebase-iid:20.0.2] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/1db8866275c41b3d104d8751b35f062b/firebase-iid-20.0.2/AndroidManifest.xml:39:13-36
+117            android:permission="com.google.android.c2dm.permission.SEND" >
+117-->[com.google.firebase:firebase-iid:20.0.2] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/1db8866275c41b3d104d8751b35f062b/firebase-iid-20.0.2/AndroidManifest.xml:40:13-73
+118            <intent-filter>
+118-->[com.google.firebase:firebase-iid:20.0.2] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/1db8866275c41b3d104d8751b35f062b/firebase-iid-20.0.2/AndroidManifest.xml:41:13-43:29
+119                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+119-->[com.google.firebase:firebase-iid:20.0.2] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/1db8866275c41b3d104d8751b35f062b/firebase-iid-20.0.2/AndroidManifest.xml:42:17-81
+119-->[com.google.firebase:firebase-iid:20.0.2] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/1db8866275c41b3d104d8751b35f062b/firebase-iid-20.0.2/AndroidManifest.xml:42:25-78
+120            </intent-filter>
+121        </receiver>
+122
+123        <activity
+123-->[com.google.android.gms:play-services-base:17.1.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/cfafb781a345d3f54848aefef9b2f0c0/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+124            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+124-->[com.google.android.gms:play-services-base:17.1.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/cfafb781a345d3f54848aefef9b2f0c0/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
 125            android:exported="false"
-125-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:51:13-37
-126            android:permission="android.permission.BIND_JOB_SERVICE" />
-126-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:52:13-69
+125-->[com.google.android.gms:play-services-base:17.1.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/cfafb781a345d3f54848aefef9b2f0c0/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+126            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+126-->[com.google.android.gms:play-services-base:17.1.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/cfafb781a345d3f54848aefef9b2f0c0/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
 127
-128        <provider
-128-->[com.google.firebase:firebase-common:19.3.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/af9db124845b5eb68217777f928e3593/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
-129            android:name="com.google.firebase.provider.FirebaseInitProvider"
-129-->[com.google.firebase:firebase-common:19.3.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/af9db124845b5eb68217777f928e3593/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
-130            android:authorities="com.example.homedical.firebaseinitprovider"
-130-->[com.google.firebase:firebase-common:19.3.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/af9db124845b5eb68217777f928e3593/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
-131            android:exported="false"
-131-->[com.google.firebase:firebase-common:19.3.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/af9db124845b5eb68217777f928e3593/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
-132            android:initOrder="100" />
-132-->[com.google.firebase:firebase-common:19.3.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/af9db124845b5eb68217777f928e3593/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
-133
-134        <meta-data
-134-->[com.google.android.gms:play-services-basement:17.0.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/661382033ed1af2ca481477b7fc2f3a7/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-135            android:name="com.google.android.gms.version"
-135-->[com.google.android.gms:play-services-basement:17.0.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/661382033ed1af2ca481477b7fc2f3a7/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-136            android:value="@integer/google_play_services_version" />
-136-->[com.google.android.gms:play-services-basement:17.0.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/661382033ed1af2ca481477b7fc2f3a7/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-137    </application>
-138
-139</manifest>
+128        <receiver
+128-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:29:9-33:20
+129            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+129-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:30:13-85
+130            android:enabled="true"
+130-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:31:13-35
+131            android:exported="false" >
+131-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:32:13-37
+132        </receiver>
+133        <receiver
+133-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:34:9-42:20
+134            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+134-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:35:13-100
+135            android:enabled="true"
+135-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:36:13-35
+136            android:exported="true"
+136-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:37:13-36
+137            android:permission="android.permission.INSTALL_PACKAGES" >
+137-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:38:13-69
+138            <intent-filter>
+138-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:39:13-41:29
+139                <action android:name="com.android.vending.INSTALL_REFERRER" />
+139-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:40:17-79
+139-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:40:25-76
+140            </intent-filter>
+141        </receiver>
+142
+143        <service
+143-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:44:9-47:40
+144            android:name="com.google.android.gms.measurement.AppMeasurementService"
+144-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:45:13-84
+145            android:enabled="true"
+145-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:46:13-35
+146            android:exported="false" />
+146-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:47:13-37
+147        <service
+147-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:48:9-52:72
+148            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+148-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:49:13-87
+149            android:enabled="true"
+149-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:50:13-35
+150            android:exported="false"
+150-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:51:13-37
+151            android:permission="android.permission.BIND_JOB_SERVICE" />
+151-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/a2a37af89ff6b886094f25d7535393e0/play-services-measurement-17.2.0/AndroidManifest.xml:52:13-69
+152
+153        <provider
+153-->[com.google.firebase:firebase-common:19.3.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/af9db124845b5eb68217777f928e3593/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+154            android:name="com.google.firebase.provider.FirebaseInitProvider"
+154-->[com.google.firebase:firebase-common:19.3.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/af9db124845b5eb68217777f928e3593/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+155            android:authorities="com.example.homedical.firebaseinitprovider"
+155-->[com.google.firebase:firebase-common:19.3.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/af9db124845b5eb68217777f928e3593/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+156            android:exported="false"
+156-->[com.google.firebase:firebase-common:19.3.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/af9db124845b5eb68217777f928e3593/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+157            android:initOrder="100" />
+157-->[com.google.firebase:firebase-common:19.3.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/af9db124845b5eb68217777f928e3593/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+158
+159        <meta-data
+159-->[com.google.android.gms:play-services-basement:17.0.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/661382033ed1af2ca481477b7fc2f3a7/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+160            android:name="com.google.android.gms.version"
+160-->[com.google.android.gms:play-services-basement:17.0.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/661382033ed1af2ca481477b7fc2f3a7/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+161            android:value="@integer/google_play_services_version" />
+161-->[com.google.android.gms:play-services-basement:17.0.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/661382033ed1af2ca481477b7fc2f3a7/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+162
+163        <service
+163-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/0f59c153f859d535b6fcf27a200d6a64/transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+164            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+164-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/0f59c153f859d535b6fcf27a200d6a64/transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+165            android:exported="false" >
+165-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/0f59c153f859d535b6fcf27a200d6a64/transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+166            <meta-data
+166-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/0f59c153f859d535b6fcf27a200d6a64/transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+167                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+167-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/0f59c153f859d535b6fcf27a200d6a64/transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+168                android:value="cct" />
+168-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/0f59c153f859d535b6fcf27a200d6a64/transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+169        </service>
+170        <service
+170-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b901df12baeb4ad982f6b45cfff47362/transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+171            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+171-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b901df12baeb4ad982f6b45cfff47362/transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+172            android:exported="false"
+172-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b901df12baeb4ad982f6b45cfff47362/transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+173            android:permission="android.permission.BIND_JOB_SERVICE" >
+173-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b901df12baeb4ad982f6b45cfff47362/transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+174        </service>
+175
+176        <receiver
+176-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b901df12baeb4ad982f6b45cfff47362/transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+177            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+177-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b901df12baeb4ad982f6b45cfff47362/transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+178            android:exported="false" />
+178-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/b901df12baeb4ad982f6b45cfff47362/transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+179    </application>
+180
+181</manifest>
