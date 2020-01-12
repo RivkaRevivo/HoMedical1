@@ -33,7 +33,6 @@ public class Register extends AppCompatActivity {
     FirebaseAuth fAuth;
    FirebaseFirestore fStore;
     String userID;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

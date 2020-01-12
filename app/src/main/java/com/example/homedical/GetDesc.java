@@ -20,12 +20,14 @@ public class GetDesc extends Activity {
         int width = dm.widthPixels;
         int hight = dm.heightPixels;
         getWindow().setLayout((int)(width*.7),(int)(hight *.5));
-
-
         desc = (TextView) findViewById(R.id.textView6);
         Bundle b = new Bundle();
         b = getIntent().getExtras();
         String name = b.getString("desc");
         desc.setText(name);
+        
+
     }
+
+
 }

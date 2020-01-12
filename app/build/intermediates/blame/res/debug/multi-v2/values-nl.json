@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/AmitZnaft/Desktop/HoMedical-c2ad037b685c78eaf49c88481935099b7db2649f/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml",
+            "outputFile": "/Users/AmitZnaft/Desktop/HoMedical1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml",
             "map": [
                 {
                     "source": "/Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/8b7b145040f80622d5d2271a1f9fca83/appcompat-1.1.0/res/values-nl/values-nl.xml",

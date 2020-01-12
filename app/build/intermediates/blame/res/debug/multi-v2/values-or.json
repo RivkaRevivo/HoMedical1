@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/AmitZnaft/Desktop/HoMedical-c2ad037b685c78eaf49c88481935099b7db2649f/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-or/values-or.xml",
+            "outputFile": "/Users/AmitZnaft/Desktop/HoMedical1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-or/values-or.xml",
             "map": [
                 {
                     "source": "/Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/661382033ed1af2ca481477b7fc2f3a7/jetified-play-services-basement-17.0.0/res/values-or/values.xml",

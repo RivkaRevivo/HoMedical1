@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/AmitZnaft/Desktop/HoMedical-c2ad037b685c78eaf49c88481935099b7db2649f/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/AmitZnaft/Desktop/HoMedical1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
-                {
-                    "source": "/Users/AmitZnaft/Desktop/HoMedical-c2ad037b685c78eaf49c88481935099b7db2649f/app/build/generated/res/google-services/debug/values/values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,309,391,495,604,724,823",
-                        "endColumns": "143,109,81,103,108,119,98,75",
-                        "endOffsets": "194,304,386,490,599,719,818,894"
-                    },
-                    "to": {
-                        "startLines": "458,459,460,461,462,463,464,465",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "31292,31436,31546,31628,31732,31841,31961,32060",
-                        "endColumns": "143,109,81,103,108,119,98,75",
-                        "endOffsets": "31431,31541,31623,31727,31836,31956,32055,32131"
-                    }
-                },
                 {
                     "source": "/Users/AmitZnaft/.gradle/caches/transforms-2/files-2.1/661382033ed1af2ca481477b7fc2f3a7/jetified-play-services-basement-17.0.0/res/values/values.xml",
                     "from": {
@@ -38,56 +21,22 @@
                     }
                 },
                 {
-                    "source": "/Users/AmitZnaft/Desktop/HoMedical-c2ad037b685c78eaf49c88481935099b7db2649f/app/src/main/res/values/preloaded_fonts.xml",
+                    "source": "/Users/AmitZnaft/Desktop/HoMedical1/app/src/main/res/values/styles.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "159"
+                        "startLines": "3,10",
+                        "startColumns": "4,4",
+                        "startOffsets": "54,374",
+                        "endLines": "8,14",
+                        "endColumns": "12,12",
+                        "endOffsets": "368,552"
                     },
                     "to": {
-                        "startLines": "16",
-                        "startColumns": "4",
-                        "startOffsets": "3622",
-                        "endLines": "18",
-                        "endColumns": "12",
-                        "endOffsets": "3722"
-                    }
-                },
-                {
-                    "source": "/Users/AmitZnaft/Desktop/HoMedical-c2ad037b685c78eaf49c88481935099b7db2649f/app/src/main/res/values/colors.xml",
-                    "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "157,57,105",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "198,99,151"
-                    },
-                    "to": {
-                        "startLines": "170,171,172",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "11326,11372,11419",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "11367,11414,11465"
-                    }
-                },
-                {
-                    "source": "/Users/AmitZnaft/Desktop/HoMedical-c2ad037b685c78eaf49c88481935099b7db2649f/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "17",
-                        "endColumns": "46",
-                        "endOffsets": "59"
-                    },
-                    "to": {
-                        "startLines": "439",
-                        "startColumns": "4",
-                        "startOffsets": "28912",
-                        "endColumns": "46",
-                        "endOffsets": "28954"
+                        "startLines": "473,479",
+                        "startColumns": "4,4",
+                        "startOffsets": "32702,33021",
+                        "endLines": "478,483",
+                        "endColumns": "12,12",
+                        "endOffsets": "33016,33198"
                     }
                 },
                 {
@@ -107,6 +56,25 @@
                         "endLines": "173,174,175,176,177,178,179,180,440,441,442,443,444,445,446,447,449,450,451,452,453,454,455,456,457,3032,3316",
                         "endColumns": "89,79,89,89,79,80,79,79,104,180,124,106,179,122,115,102,187,104,180,124,174,147,62,61,78,20,20",
                         "endOffsets": "11555,11635,11725,11815,11895,11976,12056,12136,29059,29240,29365,29472,29652,29775,29891,29994,30349,30454,30635,30760,30935,31083,31146,31208,31287,199424,212961"
+                    }
+                },
+                {
+                    "source": "/Users/AmitZnaft/Desktop/HoMedical1/app/src/main/res/values/font_certs.xml",
+                    "from": {
+                        "startLines": "2,6,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "57,263,1993",
+                        "endLines": "5,10,15",
+                        "endColumns": "12,19,19",
+                        "endOffsets": "257,1987,3582"
+                    },
+                    "to": {
+                        "startLines": "2,6,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "105,307,2032",
+                        "endLines": "5,10,15",
+                        "endColumns": "12,19,19",
+                        "endOffsets": "302,2027,3617"
                     }
                 },
                 {
@@ -205,22 +173,56 @@
                     }
                 },
                 {
-                    "source": "/Users/AmitZnaft/Desktop/HoMedical-c2ad037b685c78eaf49c88481935099b7db2649f/app/src/main/res/values/styles.xml",
+                    "source": "/Users/AmitZnaft/Desktop/HoMedical1/app/build/generated/res/google-services/debug/values/values.xml",
                     "from": {
-                        "startLines": "3,10",
-                        "startColumns": "4,4",
-                        "startOffsets": "54,374",
-                        "endLines": "8,14",
-                        "endColumns": "12,12",
-                        "endOffsets": "368,552"
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,309,391,495,604,724,823",
+                        "endColumns": "143,109,81,103,108,119,98,75",
+                        "endOffsets": "194,304,386,490,599,719,818,894"
                     },
                     "to": {
-                        "startLines": "473,479",
-                        "startColumns": "4,4",
-                        "startOffsets": "32702,33021",
-                        "endLines": "478,483",
-                        "endColumns": "12,12",
-                        "endOffsets": "33016,33198"
+                        "startLines": "458,459,460,461,462,463,464,465",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "31292,31436,31546,31628,31732,31841,31961,32060",
+                        "endColumns": "143,109,81,103,108,119,98,75",
+                        "endOffsets": "31431,31541,31623,31727,31836,31956,32055,32131"
+                    }
+                },
+                {
+                    "source": "/Users/AmitZnaft/Desktop/HoMedical1/app/src/main/res/values/preloaded_fonts.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "159"
+                    },
+                    "to": {
+                        "startLines": "16",
+                        "startColumns": "4",
+                        "startOffsets": "3622",
+                        "endLines": "18",
+                        "endColumns": "12",
+                        "endOffsets": "3722"
+                    }
+                },
+                {
+                    "source": "/Users/AmitZnaft/Desktop/HoMedical1/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endColumns": "46",
+                        "endOffsets": "59"
+                    },
+                    "to": {
+                        "startLines": "439",
+                        "startColumns": "4",
+                        "startOffsets": "28912",
+                        "endColumns": "46",
+                        "endOffsets": "28954"
                     }
                 },
                 {
@@ -243,22 +245,20 @@
                     }
                 },
                 {
-                    "source": "/Users/AmitZnaft/Desktop/HoMedical-c2ad037b685c78eaf49c88481935099b7db2649f/app/src/main/res/values/font_certs.xml",
+                    "source": "/Users/AmitZnaft/Desktop/HoMedical1/app/src/main/res/values/colors.xml",
                     "from": {
-                        "startLines": "2,6,11",
+                        "startLines": "4,2,3",
                         "startColumns": "4,4,4",
-                        "startOffsets": "57,263,1993",
-                        "endLines": "5,10,15",
-                        "endColumns": "12,19,19",
-                        "endOffsets": "257,1987,3582"
+                        "startOffsets": "157,57,105",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "198,99,151"
                     },
                     "to": {
-                        "startLines": "2,6,11",
+                        "startLines": "170,171,172",
                         "startColumns": "4,4,4",
-                        "startOffsets": "105,307,2032",
-                        "endLines": "5,10,15",
-                        "endColumns": "12,19,19",
-                        "endOffsets": "302,2027,3617"
+                        "startOffsets": "11326,11372,11419",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "11367,11414,11465"
                     }
                 }
             ]
